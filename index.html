@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {color: blue;}
+        .highlight p {color: red;}
+        #unique p {color: green;}
+
+        @media (max-width: 600px){
+            body{
+                background-color: blue;
+            }
+        }
+
+        a:hover{color: red;}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="width: 200px; padding:20px; border: 5px solid black">Box</div>
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
+        <p>Centered Text</p>
+    </div>
+
+    <div id="unique" class="highlight">
+        <p>Text</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr);">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <div style="position: relative;">
+        <div style="position: absolute; top: 50px; left: 50px;">Box</div>
+    </div>
+
+    <!-- <div style="width: 100px; height: 100px; background-color: red; transition: background-color 2s;">
+        Hover Over me
+    </div> -->
+
+    <form>
+        <input type="email" required>
+        <input type="submit">
+    </form>
+
+    <a href="#">Link</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
